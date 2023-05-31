@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:clickable="true"
+        android:focusable="true"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="end"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorSignIn"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvAppBarLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/font"
+                    android:text="@string/home"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivBack"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.50"
+                    app:layout_goneMarginStart="15dp" />
+
+                <ImageView
+                    android:id="@+id/ivDrawer"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_drawer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="12dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/ic_back_arrow"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBgColor"
+                android:layout_below="@+id/clAppBar">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/fcView"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:defaultNavHost="true"
+                    app:navGraph="@navigation/nav_graph" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorSignIn"
+            app:itemTextColor="#fff"
+            app:itemIconTint="#fff"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="end">
+
+            <include
+                android:id="@+id/layout_nav"
+                layout="@layout/layout_nav_view"
+                />
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

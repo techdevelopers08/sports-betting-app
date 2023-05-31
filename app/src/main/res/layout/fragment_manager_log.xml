@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgColor"
+        tools:context=".ui.home.ManagerLogFragment">
+
+
+        <TextView
+            android:id="@+id/text_manager_log"
+            android:layout_width="0dp"
+            android:textColor="#fff"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/font"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/knockout_info"
+            android:layout_height="wrap_content"/>
+
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/email_checkbox"
+            android:text="@string/email_me_any_tip_changes_made_by_comp_manager"
+            android:layout_width="0dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_manager_log"
+            app:layout_constraintEnd_toEndOf="@id/text_manager_log"
+            app:layout_constraintTop_toBottomOf="@id/text_manager_log"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:text="@string/update_only"
+            android:id="@+id/update_button"
+            android:textSize="@dimen/_18ssp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/font"
+            android:background="@color/colorSignIn"
+            app:layout_constraintStart_toStartOf="@id/email_checkbox"
+            app:layout_constraintTop_toBottomOf="@id/email_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rec_parent"
+            android:layout_width="0dp"
+            android:background="@color/colorSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/update_button"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tipster"
+                android:layout_width="wrap_content"
+                android:text="@string/Tipster"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toStartOf="@id/change"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/font"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/change"
+                android:layout_width="wrap_content"
+                android:text="@string/change"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/font"
+                app:layout_constraintEnd_toStartOf="@id/reason"
+                app:layout_constraintStart_toEndOf="@id/tipster"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/reason"
+                android:layout_width="wrap_content"
+                android:text="@string/reason"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/font"
+                app:layout_constraintStart_toEndOf="@id/change"
+                app:layout_constraintEnd_toStartOf="@id/logged"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/logged"
+                android:layout_width="wrap_content"
+                android:text="@string/change"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/font"
+                app:layout_constraintStart_toEndOf="@id/reason"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/manager_log_list"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/manager_logs_item"
+            app:layout_constraintTop_toBottomOf="@id/rec_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

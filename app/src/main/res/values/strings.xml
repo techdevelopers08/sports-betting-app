@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">Sport betting</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an Account? Sign Up</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_email">Continue with Email</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="or">OR</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="register">Register</string>
+    <string name="tipping_name">Tipping Name*</string>
+    <string name="note_tipping_name_is_used_as_your_username_to_login_and_must_be_unique">Note: Tipping Name is used as your username to login and must be unique</string>
+    <string name="password">Password*</string>
+    <string name="first_name">First Name*</string>
+    <string name="surname">Surname*</string>
+    <string name="email">Email*</string>
+    <string name="confirm_email_address">Confirm Email Address*</string>
+    <string name="gender">Gender*</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="year_of_birth">Year of birth*</string>
+    <string name="select_here">Select Here</string>
+    <string name="country">Country*</string>
+    <string name="hint_enter_here">Enter here</string>
+    <string name="post_code">Post Code*</string>
+    <string name="time_zone">Time Zone*</string>
+    <string name="fav_sports">Favourite Sports*</string>
+    <string name="fav_team">Favourite Team*</string>
+    <string name="verification_code">Verification Code*</string>
+    <string name="yes_please_email_me_a_tip_reminder_atleast_24_hours_nbefore_tipping_closes_if_i_have_not_submitted_my_tips">Yes, please email me a tip reminder atleast 24 hours before tipping closes if i have not submitted my tips.</string>
+    <string name="yes_please_email_me_any_itipfooty_notifications_nsuch_as_scheduled_outages_news_public_comp_into_etc">Yes, please email me any ITIPFooty notifications\nsuch as scheduled outages news, public comp into etc.</string>
+    <string name="i_agree_to_the_terms_and_conditions">I agree to the <u>Terms and conditions</u></string>
+    <string name="my_account">My Account</string>
+    <string name="my_comp">My Comp</string>
+    <string name="leader_board">Leader Board</string>
+    <string name="comp_management">Comp Management</string>
+    <string name="more">More</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="tipping">Tipping</string>
+    <string name="wizard_tips">Wizard Tips</string>
+    <string name="create_comp">Create Comp</string>
+    <string name="join_comp">Join Comp</string>
+    <string name="my_comps">My Comps</string>
+    <string name="comp_name">Comp Name</string>
+    <string name="afl">AFL</string>
+    <string name="_5_members_father_mother_tom">5 Members | Father,Mother, Tom...</string>
+    <string name="comp_number">Comp. number</string>
+    <string name="select_a_sports">Select a Sports</string>
+    <string name="next">Next</string>
+    <string name="cancel">Cancel</string>
+    <string name="name_your_comp">Name your Comp</string>
+    <string name="search_for_friends">Search for friends</string>
+    <string name="password_">Password</string>
+    <string name="verify_password_">Verify Password</string>
+    <string name="scoring_tips">Scoring Tips: </string>
+    <string name="points_tipster_will_be_allocated_the_points_selected_by_comp_manager_for_correct_tips">Points - (Tipster will be allocated the points selected by comp. manager for correct tips)</string>
+    <string name="price_tipster_will_be_allocated_the_betting_ods_price_as_their_points_for_correct_tips">Price - (Tipster will be allocated the betting ods price as their points for correct tips)</string>
+    <string name="first_game_5_minutes_before_the_first_game_of_round">First Game - (5 - minutes before the first game of Round.)</string>
+    <string name="every_game_5_minutes_before_the_every_game_of_the_round">Every Game - (5 - minutes before the every game of the Round)</string>
+    <string name="rules">Rules</string>
+    <string name="rules_text">Select the rules you wish to apply to your tipping comp below:</string>
+    <string name="tip_winner">*Tip a Winner</string>
+    <string name="tip_draw">Tip a draw</string>
+    <string name="logout">Logout</string>
+    <string name="include_perfect_round_bonus">Include perfect round bonus for bye rounds</string>
+    <string name="yes">Yes</string>
+    <string name="non_sub">*Non-Submission</string>
+    <string name="join_late">*Join late</string>
+    <string name="finals">*Finals</string>
+    <string name="hide_ladder">* Hide-ladder/View all tips</string>
+    <string name="hide_tipsters">Hide tipsters names</string>
+    <string name="show_betting_odds">* Show Betting odds</string>
+    <string name="prize_info">* Prize Information</string>
+    <string name="knockout">Knockout Comp</string>
+    <string name="knockout_info">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend </string>
+    <string name="include_knock_comp">Would you like to include a knockout comp?</string>
+    <string name="margin">Margin</string>
+    <string name="no">No</string>
+    <string name="joker">Joker Round</string>
+    <string name="include_joker">Would you like to add joker round</string>
+    <string name="margin_que">Select below to turn on or off margin rule</string>
+    <string name="prize_management">Prize Management</string>
+    <string name="perfect_rounds">Perfect Rounds</string>
+    <string name="update">Update Account</string>
+    <string name="date">Monday 23rd May 2021</string>
+    <string name="_9_00">9:00 PM</string>
+    <string name="location">Location</string>
+    <string name="_1_30">$1.30</string>
+    <string name="vs">VS</string>
+    <string name="w">W</string>
+    <string name="l">L</string>
+    <string name="prev">Previous Encounters</string>
+    <string name="_2018">2018</string>
+    <string name="_2019">2019</string>
+    <string name="_2020">2020</string>
+    <string name="name">Riya Roy</string>
+    <string name="pts">PTS : </string>
+    <string name="mar">Mar : </string>
+    <string name="pts_val">12.45</string>
+    <string name="mar_val">5</string>
+    <string name="text">To add more recipients simply click on \'Add Row\' button ,To delete a recepient tick the tickbox next to the recipient and click \'delete now\'</string>
+    <string name="full_name">Full name</string>
+    <string name="add_row">Add Row</string>
+    <string name="delete_row">Delete Row</string>
+    <string name="email_message">Email Messages</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send_invites">Send Invite(s)</string>
+    <string name="view_all_tips">View All Tips</string>
+    <string name="view_all_tips_text">"View all tips "</string>
+    <string name="manager_log">Manager Log</string>
+    <string name="email_me_any_tip_changes_made_by_comp_manager">Email me any tip changes made by comp manager</string>
+    <string name="update_only">Update</string>
+    <string name="Tipster">Tipster</string>
+    <string name="change">Change</string>
+    <string name="reason">Reason</string>
+    <string name="ko">KO</string>
+    <string name="tipping_log">Tipping Log</string>
+
+    <string name="invite_tipsters">Invite tipsters</string>
+    <string name="football">Football</string>
+    <string name="odds_fragment">Odds Fragment</string>
+    <string name="detail">Detail</string>
+    <string name="spinner">spinner</string>
+    <string name="rugby">Rugby</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="submit_tips">Submit Tips</string>
+    <string name="confirm_new_password">Confirm Password</string>
+    <string name="create_new_password">Create new Password</string>
+    <string name="old">Current Password</string>
+
+    <string-array name="spinnerItems">
+        <item>Football</item>
+        <item>NBA</item>
+        <item>Ice Hockey</item>
+        <item>Cricket</item>
+    </string-array>
+
+    <string-array name="team_spinner">
+        <item>Barcelona</item>
+        <item>Chelsea</item>
+        <item>Liverpool</item>
+        <item>Manchester United</item>
+    </string-array>
+
+    <string-array name="gmt">
+        <item>GMT</item>
+        <item>EST</item>
+
+    </string-array>
+
+    <string-array name="tip_a_winner_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="betting_odds_value">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string-array name="hide_tip">
+        <item>Hide</item>
+        <item>Dont Hide</item>
+    </string-array>
+
+
+</resources>

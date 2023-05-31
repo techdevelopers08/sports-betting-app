@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_select_sport"
+    app:startDestination="@id/selectSportsOptionsFragment2">
+
+    <fragment
+        android:id="@+id/selectSportsOptionsFragment2"
+        android:name="com.app.sportbetting.ui.home.SelectSportsOptionsFragment"
+        android:label="SelectSportsOptionsFragment" >
+        <action
+            android:id="@+id/action_selectSportsOptionsFragment2_to_createCompForm1Fragment2"
+            app:destination="@id/createCompForm1Fragment2"
+            app:popUpTo="@id/nav_select_sport" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCompForm1Fragment2"
+        android:name="com.app.sportbetting.ui.home.CreateCompForm1Fragment"
+        android:label="CreateCompForm1Fragment" >
+        <action
+            android:id="@+id/action_createCompForm1Fragment2_to_createCompForm2Fragment2"
+            app:destination="@id/createCompForm2Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCompForm2Fragment2"
+        android:name="com.app.sportbetting.ui.home.CreateCompForm2Fragment"
+        android:label="CreateCompForm2Fragment" >
+        <action
+            android:id="@+id/action_createCompForm2Fragment2_to_createCompFragment32"
+            app:destination="@id/createCompFragment32" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCompFragment32"
+        android:name="com.app.sportbetting.ui.home.CreateCompFragment3"
+        android:label="CreateCompFragment3" />
+</navigation>

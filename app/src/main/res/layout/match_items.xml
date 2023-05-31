@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/date"
+            android:textColor="#fff"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/time_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/_9_00"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/location"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toStartOf="@id/mid_guide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time_parent">
+
+            <TextView
+                android:id="@+id/margin_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_green"
+                android:text="@string/_1_30"
+                android:textColor="#326034" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_margin2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/mid_guide"
+            app:layout_constraintTop_toBottomOf="@id/time_parent">
+
+            <TextView
+                android:id="@+id/margin_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_green"
+                android:gravity="center"
+                android:text="@string/_1_30"
+                android:textColor="#326034" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/team_1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="#5A5959"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:layout_constraintEnd_toStartOf="@id/mid_guide"
+            app:layout_constraintStart_toStartOf="@id/time_parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_margin">
+
+            <TextView
+                android:id="@+id/team_1_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="@string/team_1"
+                android:textSize="18sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/team_2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:cardBackgroundColor="#C6C2C2"
+            app:cardCornerRadius="@dimen/_6sdp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/mid_guide"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_margin2">
+
+            <TextView
+                android:id="@+id/team_2_image"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="@string/team_2"
+                android:textSize="18sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <RadioGroup
+            android:id="@+id/match_radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/team_1">
+
+
+            <RadioButton
+                android:id="@+id/team_1_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" />
+
+
+            <RadioButton
+                android:id="@+id/team_2_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_6sdp"
+            app:layout_constraintBottom_toTopOf="@id/match_radio_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_margin">
+
+            <TextView
+                android:id="@+id/vs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="#fff"
+                android:text="@string/vs"
+                android:textColor="#000" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/_6sdp"
+            app:layout_constraintBottom_toTopOf="@id/match_radio_group"
+            app:cardCornerRadius="@dimen/_4sdp"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/team_1">
+
+            <EditText
+                android:id="@+id/margin_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:elevation="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="@string/margin"
+                android:inputType="number" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/mid_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

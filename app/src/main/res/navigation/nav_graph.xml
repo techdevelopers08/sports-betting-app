@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment"
+    >
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.sportbetting.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_tippingFragment"
+            app:destination="@id/tippingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_compFragment"
+            app:destination="@id/compFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_myAccount"
+            app:destination="@id/myAccount" />
+    </fragment>
+    <fragment
+        android:id="@+id/tippingFragment"
+        android:name="com.app.sportbetting.ui.home.TippingFragment"
+        android:label="fragment_tipping"
+        tools:layout="@layout/fragment_tipping" >
+        <action
+            android:id="@+id/action_tippingFragment_to_joinCompFragment"
+            app:destination="@id/joinCompFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_tippingFragment_to_selectSportsOptionsFragment"
+            app:destination="@id/selectSportsOptionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/compFragment"
+        android:name="com.app.sportbetting.ui.home.MyCompFragment"
+        android:label="CompFragment" >
+        <action
+            android:id="@+id/action_compFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/joinCompFragment"
+        android:name="com.app.sportbetting.ui.home.JoinCompFragment"
+        android:label="fragment_join_comp"
+        tools:layout="@layout/fragment_join_comp" />
+    <fragment
+        android:id="@+id/selectSportsOptionsFragment"
+        android:name="com.app.sportbetting.ui.home.SelectSportsOptionsFragment"
+        android:label="SelectSportsOptionsFragment" >
+        <action
+            android:id="@+id/action_selectSportsOptionsFragment_to_createCompForm1Fragment"
+            app:destination="@id/createCompForm1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCompForm1Fragment"
+        android:name="com.app.sportbetting.ui.home.CreateCompForm1Fragment"
+        android:label="fragment_create_comp_form1"
+        tools:layout="@layout/fragment_create_comp_form1" >
+        <action
+            android:id="@+id/action_createCompForm1Fragment_to_createCompForm2Fragment"
+            app:destination="@id/createCompForm2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCompForm2Fragment"
+        android:name="com.app.sportbetting.ui.home.CreateCompForm2Fragment"
+        android:label="fragment_create_comp_form2"
+        tools:layout="@layout/fragment_create_comp_form2" >
+        <action
+            android:id="@+id/action_createCompForm2Fragment_to_createCompFragment3"
+            app:destination="@id/createCompFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCompFragment3"
+        android:name="com.app.sportbetting.ui.home.CreateCompFragment3"
+        android:label="fragment_create_comp3"
+        tools:layout="@layout/fragment_create_comp3" >
+        <action
+            android:id="@+id/action_createCompFragment3_to_compFragment"
+            app:destination="@id/compFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAccount"
+        android:name="com.app.sportbetting.ui.home.MyAccount"
+        android:label="MyAccount" >
+        <action
+            android:id="@+id/action_myAccount_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

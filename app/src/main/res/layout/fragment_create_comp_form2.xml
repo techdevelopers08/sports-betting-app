@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgColor"
+    tools:context=".ui.home.CreateCompForm2Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/rules"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rules_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/rules_text"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/textView" />
+
+            <TextView
+                android:id="@+id/tip_winner_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/tip_winner"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/rules_text" />
+
+
+            <RelativeLayout
+                android:id="@+id/tip_winner_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_email"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/tip_winner_text">
+
+
+                <Spinner
+                    android:id="@+id/tip_a_winner_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!--<ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_arrow_down" />
+
+-->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tip_a_draw_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/tip_draw"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/tip_winner_parent" />
+
+
+            <RelativeLayout
+                android:id="@+id/tip_a_draw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_email"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/tip_a_draw_text">
+
+                <Spinner
+                    android:id="@+id/tip_draw_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+               <!-- <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_arrow_down" />
+-->
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/perfect_round_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/perfect_rounds"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/tip_a_draw" />
+
+
+            <RelativeLayout
+                android:id="@+id/perfect_round"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_email"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/perfect_round_text">
+
+                <Spinner
+                    android:id="@+id/perfect_round_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+               <!-- <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_arrow_down" />
+-->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/include_round_bonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/include_perfect_round_bonus"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/perfect_round" />
+
+            <RadioGroup
+                android:id="@+id/include_perfect_round_radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/include_round_bonus">
+
+                <RadioButton
+                    android:id="@+id/perfect_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="@string/yes"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/perfect_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="@string/no"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/non_submission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/non_sub"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/include_perfect_round_radio" />
+
+
+            <RelativeLayout
+                android:id="@+id/non_sub_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_email"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/non_submission">
+
+                <Spinner
+                    android:id="@+id/non_sub_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+              <!--  <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_arrow_down" />
+-->
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/join_late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/join_late"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/non_sub_parent" />
+
+
+            <RelativeLayout
+                android:id="@+id/join_late_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_email"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/join_late">
+
+                <Spinner
+                    android:id="@+id/join_late_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+              <!--  <ImageView
+                    android:id="@+id/join_late_image"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_arrow_down" />
+-->
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/finals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/finals"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/join_late_parent" />
+
+            <RadioGroup
+                android:id="@+id/final_radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/finals">
+
+                <RadioButton
+                    android:id="@+id/yes_finals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="@string/yes"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/no_finals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="@string/no"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/hide_ladder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/hide_ladder"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/final_radio" />
+
+
+            <RelativeLayout
+                android:id="@+id/hide_ladder_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_email"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/hide_ladder">
+
+                <Spinner
+                    android:id="@+id/hide_ladders_spinners"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            <!--    <ImageView
+                    android:id="@+id/hide_ladder_image"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_arrow_down" />-->
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/hide_tipsters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/hide_tipsters"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/hide_ladder_parent" />
+
+
+            <RelativeLayout
+                android:id="@+id/hide_tipster_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_email"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/hide_tipsters">
+
+                <Spinner
+                    android:id="@+id/hide_tipsters_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+
+                <!--<ImageView
+                    android:id="@+id/hide_tipster_image"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_arrow_down" />-->
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/betting_odds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+                android:text="@string/show_betting_odds"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/hide_tipster_parent" />
+
+
+            <RelativeLayout
+                android:id="@+id/betting_odds_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_email"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/betting_odds">
+
+                <Spinner
+                    android:id="@+id/betting_odds_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!--<ImageView
+
+                    android:id="@+id/betting_odds_image"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_arrow_down" />
+-->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/prize_info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font"
+
+                android:text="@string/prize_info"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@id/betting_odds_parent" />
+
+            <EditText
+                android:id="@+id/prize_info_val"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/et_email"
+                android:ems="10"
+                android:hint="@string/hint_enter_here"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorEmailBtn"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font"
+                app:layout_constraintTop_toBottomOf="@id/prize_info_text"
+                app:layout_constraintStart_toStartOf="@id/guideline16"
+                app:layout_constraintEnd_toStartOf="@id/guideline18"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+            <Button
+                android:id="@+id/btn_form_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSignIn"
+                android:fontFamily="@font/font"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/next"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                app:cornerRadius="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/back_1"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toBottomOf="@+id/prize_info_val" />
+
+            <TextView
+                android:id="@+id/back_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="@string/cancel"
+                android:textColor="@color/colorBluish"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_form_1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+</layout>

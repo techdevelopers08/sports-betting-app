@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#3D3F47"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_view_all"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/imageView_parent"
+                android:layout_width="@dimen/_50sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="@dimen/_50sdp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/views_tips1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBgColor"
+                   />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/view_all_tips"
+                android:layout_width="0dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/font"
+                app:layout_constraintTop_toTopOf="@id/imageView_parent"
+                app:layout_constraintBottom_toBottomOf="@id/imageView_parent"
+                app:layout_constraintStart_toEndOf="@id/imageView_parent"
+                android:text="@string/view_all_tips_text"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/nex_im_view_all_tips"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/view_all_tips"
+                app:layout_constraintBottom_toBottomOf="@id/view_all_tips"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_height="0dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_manager"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_tipping_log_constraint">
+
+            <LinearLayout
+                android:id="@+id/manager_log_ima_parent"
+                android:layout_width="@dimen/_50sdp"
+                android:background="@color/colorBgColor"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="@dimen/_50sdp">
+                <ImageView
+                    android:id="@+id/manager_log_image"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/views_tips1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/manager_text"
+                android:layout_width="0dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/font"
+                app:layout_constraintTop_toTopOf="@id/manager_log_ima_parent"
+                app:layout_constraintBottom_toBottomOf="@id/manager_log_ima_parent"
+                app:layout_constraintStart_toEndOf="@id/manager_log_ima_parent"
+                android:text="@string/manager_log"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/nex_im_manager"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/manager_text"
+                app:layout_constraintBottom_toBottomOf="@id/manager_text"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_height="0dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/my_tipping_log_constraint"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraint_view_all">
+
+
+            <LinearLayout
+                android:id="@+id/tipping_log_parent"
+                android:layout_width="@dimen/_50sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/colorBgColor"
+                android:layout_height="@dimen/_50sdp">
+
+                <ImageView
+                    android:id="@+id/my_tipping_log_image"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/tipping_log2"
+                    android:layout_height="wrap_content"
+                   />
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tipping_log_text"
+                android:layout_width="0dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/font"
+                app:layout_constraintTop_toTopOf="@id/tipping_log_parent"
+                app:layout_constraintBottom_toBottomOf="@id/tipping_log_parent"
+                app:layout_constraintStart_toEndOf="@id/tipping_log_parent"
+                android:text="@string/tipping_log"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/next_im_tipping_log"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/tipping_log_text"
+                app:layout_constraintBottom_toBottomOf="@id/tipping_log_text"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_height="0dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/invite_tips_parent"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraint_manager">
+
+            <LinearLayout
+                android:id="@+id/invite_tips_image_parent"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/invite_tips_image"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/views_tips1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBgColor"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/invite_tips_text"
+                android:layout_width="0dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/font"
+                app:layout_constraintTop_toTopOf="@id/invite_tips_image_parent"
+                app:layout_constraintBottom_toBottomOf="@id/invite_tips_image_parent"
+                app:layout_constraintStart_toEndOf="@id/invite_tips_image_parent"
+                android:text="@string/invite_tipsters"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/next_im_invite_tipsters"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/invite_tips_text"
+                app:layout_constraintBottom_toBottomOf="@id/invite_tips_text"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_height="0dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

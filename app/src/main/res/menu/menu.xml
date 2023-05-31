@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_awesome_building"
+            android:title="@string/my_comp" />
+        <item
+            android:id="@+id/compFragment"
+            android:icon="@drawable/ic_awesome_user_alt"
+            android:title="@string/my_account" />
+        <item
+            android:id="@+id/tippingFragment"
+            android:icon="@drawable/ic_awesome_list_ul"
+            android:title="@string/tipping" />
+
+        <item
+            android:id="@+id/compManagementFragment"
+            android:icon="@drawable/ic_awesome_building"
+            android:title="@string/comp_management" />
+        <item
+            android:id="@+id/nav_more"
+            android:icon="@drawable/ic_open_document"
+            android:title="@string/more" />
+        <item
+            android:id="@+id/joinCompFragment"
+            android:icon="@drawable/ic_material_add_to_photos"
+            android:title="@string/join_comp" />
+        <item
+            android:id="@+id/selectSportsOptionsFragment"
+            android:icon="@drawable/ic_feather_file_plus"
+            android:title="@string/create_comp" />
+        <item
+            android:id="@+id/resetPasswordFragment"
+            android:icon="@drawable/ic_awesome_key"
+            android:title="@string/reset_password" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_awesome_key"
+            android:title="@string/logout" />
+
+    </group>
+
+</menu>
